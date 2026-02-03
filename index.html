@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat of the day</title>
+      <style>
+        body {
+            background: linear-gradient(135deg, #ffe4f2, #fff0f8);
+            font-family: "Comic Sans MS", "Poppins", cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffb6d5;
+            padding: 15px;
+            border-bottom: 4px dashed #ff89b5;
+        }
+
+        h4 {
+            color: #ff4f9a;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        h3 {
+            color: #ff6fae;
+        }
+
+        #catImage {
+            margin-top: 20px;
+            max-width: 320px;
+            border-radius: 25px;
+            border: 5px solid #ffd1e8;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+            background-color: white;
+            padding: 8px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #ff8ccf;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(255, 140, 207, 0.4);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #ff66b3;
+            transform: scale(1.08);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h4>
+        <center>
+            meowAPI <br>
+            <img src= "1234.gif" alt="cute bow" height="55">
+        </center>
+    </h4>
+</header>
+
+<center>
+    <h3>🐱 Cat of the Day</h3>
+    <img id="catImage" width="300" />
+    <br><br>
+    <button onclick="loadCat()">New Cat 😼</button>
+</center>
+
+<script src="script.js"></script>
+</body>
+</html>
